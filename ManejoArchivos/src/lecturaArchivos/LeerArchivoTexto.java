@@ -40,7 +40,7 @@ public class LeerArchivoTexto {
                 String linea = entrada.nextLine();
                 // System.out.println(linea);
                 ArrayList<String> linea_partes = new ArrayList<String>(Arrays.asList(linea.split(";")));
-                System.out.println(linea_partes);
+                System.out.println(linea_partes.get(0));
 
             } // fin de while
         } // fin de try

@@ -19,7 +19,7 @@ public class ArchivoTexto {
     // permite al usuario abrir el archivo
     public void abrir_archivo() {
         try {
-            salida = new Formatter("clientes2.txt");
+            salida = new Formatter("ejemplo-archivo.txt");
         } // fin de try
         catch (SecurityException securityException) {
             System.err.println(
@@ -54,6 +54,7 @@ public class ArchivoTexto {
 
                 // escribe el nuevo registro (escribe en el archivo
                 salida.format("%d|%s|%s\n", edad, nombre, apellido);
+                salida.format("%d;%s;%s\n", edad, nombre, apellido);
 
                 System.out.println("Desea ingresar más datos si (1), no(2)");
                 int valor = entrada.nextInt();
